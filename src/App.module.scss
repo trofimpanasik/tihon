@@ -1,0 +1,81 @@
+.app {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.title {
+  margin-top: 1em;
+  color: #063df2;
+  font-size: 2.5em;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  img {
+    max-width: 300px;
+    border-radius: 2em;
+    height: min-content;
+  }
+  .small {
+    max-width: 200px;
+  }
+  p {
+    margin-left: 2em;
+    font-size: 1.2em;
+    strong {
+      font-size: 1.3em;
+    }
+    span {
+      color: red;
+      font-size: 1.1em;
+    }
+  }
+  .left {
+    margin: 0 1em 0 0 ;
+  }
+}
+.list {
+  display: flex;
+  margin-top: 2em;
+  overflow-x: auto;
+  margin-bottom: 2em;
+  img {
+    margin: 0 1em;
+  }
+}
+.container {
+  width: 90%;
+  min-height: 800px;
+  border-radius: 2em 2em 0 0;
+  margin-top: 3em;
+  padding: 0 20px;
+  background-color: white;
+}
+.background {
+  position: fixed;
+  height: 100vh;
+  z-index: -1;
+  width: 100%;
+  background: linear-gradient(to right, rgb(82, 80, 206), rgb(184, 28, 227));
+  background-size: 200% 200%;
+
+  -webkit-animation: background 5s ease infinite;
+  -moz-animation: background 5s ease infinite;
+  animation: background 5s ease infinite;
+}
+@-webkit-keyframes background {
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+@-moz-keyframes background {
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+@keyframes background {
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}

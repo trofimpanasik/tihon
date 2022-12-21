@@ -1,0 +1,35 @@
+* {
+  font-family: '--AppleSystemUIFont', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  padding: 0;
+  margin: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: aliceblue;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:focus,
+button:focus-visible {
+  outline: none;
+}
